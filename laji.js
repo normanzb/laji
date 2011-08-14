@@ -96,7 +96,7 @@ laji.router = function(req, res){
 		                return;
 		            }
 		            
-		            var handlerPath = laji.webroot + path.join(sDir, srvScript.handler);
+		            var handlerPath = path.join(process.cwd(), laji.webroot, sDir, srvScript.handler);
     		        
 		            // see if it is loaded
 		            if (laji._loaded[handlerPath] == null){
